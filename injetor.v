@@ -5,6 +5,20 @@ module injetor(
   output reg [8:0] saida
 );
 
-// insira seu código aqui
+always @(entrada, n, erro)
+begin
+  
+  saida = entrada;
+
+  // 
+  if (erro == 1 && n < 9)
+
+  begin
+
+    saida[n] = ~entrada[n];
+
+  end
+  
+end
 
 endmodule

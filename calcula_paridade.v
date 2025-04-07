@@ -5,4 +5,6 @@ module calcula_paridade (
 
 // implemente o seu código aqui
 
+  assign paridade = ^dado;
+
 endmodule
